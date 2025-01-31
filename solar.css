@@ -1,0 +1,459 @@
+:root {
+  --primary-color: #4aab3d;
+  --secondary-color: #ffffff;
+}
+h1 {
+  font-size: 70px;
+  line-height: 90px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  margin-top: 0px;
+  padding: 0;
+  line-height: 28px;
+  font-size: 15px;
+}
+body {
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  font-family: sans-serif;
+}
+.email-combine a {
+  color: white;
+  text-decoration: none;
+}
+.header-email {
+  border-right: 1px solid white;
+  height: 10px;
+  text-align: center;
+  padding-right: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.address {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+.address:hover,
+.header-email:hover,
+.email-combine a:hover {
+  color: var(--primary-color);
+  transition: all 500ms ease;
+}
+.top-icon > a {
+  color: white;
+  font-size: 15px;
+  padding: 0 10px;
+}
+.top-icon > a:hover {
+  color: var(--primary-color);
+  transition: all 500ms ease;
+}
+.top-icon > a:not(:last-child) {
+  border-right: 1px solid white;
+  height: 10px;
+}
+
+.menu-bar li > a {
+  font-size: 15px;
+  padding: 0px 10px;
+  color: black;
+  font-weight: 500;
+  margin-right: 30px;
+  text-align: justify;
+}
+
+.menu-bar li > a:hover {
+  color: var(--primary-color);
+  transition: all ease-in 500ms;
+}
+
+.menu-button {
+  color: white;
+  background-color: var(--primary-color);
+  height: 50px;
+  border-radius: 20px 0px 20px 0px;
+}
+
+.menu-button:hover {
+  color: white;
+  background-color: black;
+  transition: all 1000ms ease-out;
+}
+
+.hero-all {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(/Images/banner-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.hero-all::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity */
+}
+
+.hero {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  width: 100% !important;
+  height: 100%;
+  margin-bottom: 3000px !important;
+  /* background-color: rgba(6, 6, 6, 0.9); */
+}
+
+.hero-image {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  /* margin: 0; */
+  background-size: cover;
+  overflow: inherit;
+  width: 975px;
+  height: 900px;
+}
+.primary-color {
+  color: var(--primary-color);
+}
+.hero-text {
+  text-align: start;
+  align-self: center;
+  font-size: 24px;
+  text-overflow: initial;
+  float: left;
+  width: 70%;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 950px) {
+  .hero-image {
+    /* visibility: hidden; */
+    display: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .hero-text > h1 {
+    width: 100%;
+    font-size: 40px;
+    text-align: left;
+    line-height: 60px;
+  }
+}
+
+.hero-btn {
+  /* content: ""; */
+  position: relative;
+  /* color: white; */
+  color: white;
+  font-size: 20px;
+  height: 70px;
+  width: 180px;
+  background-color: var(--primary-color);
+  margin-top: 20px;
+  padding: 12px 0px;
+  border: none;
+  z-index: 1;
+  border-radius: 20px 0px 20px 0px;
+  transition: color 0.4s linear;
+}
+
+.hero-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  color: white !important;
+  border: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.hero-btn:hover::after {
+  border: none;
+  visibility: visible;
+  background-color: red;
+  color: white !important;
+}
+
+.banner-btn {
+  color: white !important;
+}
+
+.banner-btn::after {
+  transform: scaleX(0);
+  color: white !important;
+}
+
+.banner-btn:hover::after {
+  transform: scaleX(1);
+  border-radius: 20px 0px 20px 0px;
+  color: white !important;
+}
+
+.banner-card {
+  background-color: #2a2a31;
+  background-image: url(/Images/service-bg.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 120px;
+}
+
+.card-service {
+  top: -60px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: relative;
+  /* margin-top: -50px; */
+}
+
+.card-service:hover,
+.image-badge {
+  border: 1px solid #18fa7a;
+  transition: all 0.5s ease;
+  transform: translate(5px);
+}
+
+.bannerCardTitle > a {
+  text-decoration: none;
+  color: white;
+}
+
+.card-serviceBody {
+  padding: 50px 30px;
+  height: 250px;
+}
+
+.horizontalLine {
+  height: 1px;
+  border-bottom: 1px solid white;
+  color: white;
+  margin: 10px 0px 25px 0px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: white;
+}
+.card-link:hover,
+.bannerCardTitle > a:hover {
+  color: var(--primary-color);
+  transition: all 0.2s ease-in;
+}
+
+.image-badge {
+  position: absolute;
+  top: 0px;
+  border-radius: 5px;
+  right: 40px;
+  margin: -30px 0px 0px 0px;
+  background-color: var(--primary-color);
+  padding: 12px;
+}
+
+.card-service {
+  margin-top: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.9s ease-in-out;
+}
+
+.intro-appear {
+  opacity: 1;
+  transform: translateY(0px);
+  /* color: red; */
+}
+
+.service-innertext h1 {
+  font-size: 48px;
+  color: white;
+  font-weight: 700;
+  line-height: 62px;
+}
+
+.service-innertext a {
+  background-color: var(--primary-color);
+  text-align: center;
+  color: var(--secondary-color);
+  padding: 19px 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  display: inline-block;
+  margin-bottom: 0;
+}
+.about-right {
+  margin-top: 100px;
+}
+.about-image img {
+  width: 100%;
+  max-height: 600px;
+  justify-content: end;
+  box-sizing: border-box;
+}
+
+.small-text {
+  padding-bottom: 5px;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: 700px;
+  line-height: 64px;
+}
+.about-parah {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.about-list ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.about-list ul li {
+  font-size: 20px;
+  font-weight: 700;
+}
+@media screen and (max-width: 480px) {
+  .about-list ul li {
+    font-size: 13px;
+  }
+}
+ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  /* padding-left: 12px; */
+}
+
+.solution-card {
+  transition: all 0.3s ease;
+  border: none;
+  overflow: hidden;
+  background: linear-gradient(145deg, #f8f9fa 0%, #ffffff 100%);
+}
+.solution-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+.card-icon {
+  font-size: 2.5rem;
+  color: #ffb347;
+  margin-bottom: 1.5rem;
+}
+.solution-card .btn {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background: linear-gradient(45deg, #ffb347, #ffd700);
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+.solution-card .btn:hover {
+  transform: translateX(5px);
+}
+.solution-card .btn::after {
+  content: "→";
+  position: absolute;
+  right: -15px;
+  transition: all 0.3s ease;
+}
+.solution-card .btn:hover::after {
+  right: 10px;
+}
+.card-title {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+.card-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #ffb347;
+  border-radius: 2px;
+}
+
+.about-list i {
+  color: var(--primary-color);
+  padding-right: 10px;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #ffd700;
+}
+.project-hover {
+  transition: transform 0.3s ease;
+}
+.project-hover:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ffd700;
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+footer a:hover {
+  color: #ffd700 !important;
+  transition: color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
+}
