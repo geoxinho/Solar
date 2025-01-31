@@ -58,22 +58,20 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mx-auto mb-4 mb-lg-0 menu-bar">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#about">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#service">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pages</a>
+                <a class="nav-link" href="#testimonial">Testimonial</a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
             <span class="navbar-text">
@@ -171,7 +169,7 @@
   </div>
 
 
-  <div class="container bg-white mt-5">
+  <div class="container bg-white mt-5" id="about">
     <div class="row">
       <div class="col-lg-6 col-md-12 col-sm-12 about-image">
         <img src="/Images/about-image1.png" alt="">
@@ -207,7 +205,7 @@
     </div>
   </div>
 
-  <section class="container py-5">
+  <section class="container py-5" id="service">
     <div class="text-center mb-5">
       <h2 class="display-5 fw-bold mb-3">Our Solar Solutions</h2>
       <p class="lead text-muted">Harnessing sunlight for sustainable energy solutions</p>
@@ -323,7 +321,7 @@
 
   <!-- Testimonials Section -->
   <!-- Testimonial Carousel Section -->
-  <section class="py-5 bg-light">
+  <section class="py-5 bg-light" id="testimonial">
     <div class="container">
       <h2 class="text-center mb-5">Customer Stories</h2>
       <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -347,7 +345,7 @@
           <div class="carousel-item">
             <div class="testimonial-card p-4 mx-auto" style="max-width: 800px;">
               <div class="text-center mb-4">
-                <img src="/Images/review-1.jpg" alt="Customer" class="rounded-circle object-fit-cover"
+                <img src="/Images/review-4.jpg" alt="Customer" class="rounded-circle object-fit-cover"
                   style="width: 100px; height: 100px">
               </div>
               <p class="text-center mb-3">"The best investment we've made. Our energy bills dropped by 60%!"</p>
@@ -382,13 +380,121 @@
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section class="contact-section py-5 bg-light" id="contact">
+    <div class="container grid-container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Get in Touch</h2>
+        <p class="lead text-muted">We're here to answer your solar energy questions</p>
+      </div>
+
+      <div class="row g-5 grid-container">
+        <!-- Contact Info -->
+        <div class="col-lg-5 grid-item h-100">
+          <div class="contact-info-card bg-white p-5 rounded-4 shadow-lg">
+            <div class="mb-5">
+              <h3 class="h4 mb-4">Contact Information</h3>
+              <div class="d-flex align-items-start mb-4">
+                <div class="icon-box bg-warning rounded-circle p-3 me-3">
+                  <i class="fas fa-map-marker-alt fa-lg text-white"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-1">Our Office</h4>
+                  <p class="text-muted mb-0">85 Ketch Harbour Road<br>Bensalem, PA 19020</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-4">
+                <div class="icon-box bg-success rounded-circle p-3 me-3">
+                  <i class="fas fa-phone fa-lg text-white"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-1">Call Us</h4>
+                  <p class="text-muted mb-0">Main: (215) 555-1234<br>Support: (215) 555-5678</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start">
+                <div class="icon-box bg-primary rounded-circle p-3 me-3">
+                  <i class="fas fa-envelope fa-lg text-white"></i>
+                </div>
+                <div>
+                  <h4 class="h6 mb-1">Email Us</h4>
+                  <p class="text-muted mb-0">info@sunbee.com<br>support@sunbee.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-top pt-4">
+              <h4 class="h6 mb-3">Follow Us</h4>
+              <div class="social-links">
+                <a href="#" class="btn btn-icon btn-outline-secondary me-2 rounded-circle">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-icon btn-outline-secondary me-2 rounded-circle">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-icon btn-outline-secondary me-2 rounded-circle">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="btn btn-icon btn-outline-secondary rounded-circle">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+          <div class="contact-form-card bg-white p-5 rounded-4 shadow-lg h-100">
+            <form>
+              <div class="row g-4 grid-item">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="name" placeholder="John Doe">
+                    <label for="name">Your Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <label for="email">Email Address</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input type="tel" class="form-control" id="phone" placeholder="+1 234 567 890">
+                    <label for="phone">Phone Number</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" id="message" placeholder="Your message"
+                      style="height: 150px"></textarea>
+                    <label for="message">Your Message</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-warning btn-lg w-100">
+                    Send Message <i class="fas fa-paper-plane ms-2"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer Section -->
   <footer class="bg-dark text-white pt-5">
     <div class="container">
       <div class="row g-4">
         <!-- Company Info -->
         <div class="col-md-4">
-          <h4 class="mb-3">Sunbee Solar</h4>
+          <a class="navbar-brand" href="#"><img src="/Images/logo.svg" alt=""></a>
           <p>Powering the future with renewable energy solutions since 2010</p>
           <div class="mt-3">
             <p><i class="fas fa-map-marker-alt me-2"></i>85 Ketch Harbour Road, Bensalem, PA 19020</p>

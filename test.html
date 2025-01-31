@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs Example</title>
+  <style>
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="tab-nav">
+    <li class="tab-nav-item active">Tab 1</li>
+    <li class="tab-nav-item">Tab 2</li>
+    <li class="tab-nav-item">Tab 3</li>
+  </ul>
+
+  <div class="tab-content active">
+    <h2>Tab 1 Content</h2>
+    <p>This is the content for Tab 1.</p>
+  </div>
+
+  <div class="tab-content">
+    <h2>Tab 2 Content</h2>
+    <p>This is the content for Tab 2.</p>
+  </div>
+
+  <div class="tab-content">
+    <h2>Tab 3 Content</h2>
+    <p>This is the content for Tab 3.</p>
+  </div>
+
+  <script>
+    const tabNavItems = document.querySelectorAll('.tab-nav-item');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabNavItems.forEach((navItem, index) => {
+      navItem.addEventListener('click', () => {
+        // Remove active class from all nav items and tab contents
+        tabNavItems.forEach(item => item.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+
+        // Add active class to clicked nav item and corresponding tab content
+        navItem.classList.add('active');
+        tabContents[index].classList.add('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
